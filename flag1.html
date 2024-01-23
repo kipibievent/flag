@@ -1,82 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Happy Republic Day</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial;
-  font-size: 17px;
-}
-
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
-}
-
-
-#myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-}
-
-#myBtn:hover {
-  background: #ddd;
-  color: black;
-}
-.bottom-right {
-  position: absolute;
-  bottom: 8px;
-  right: 16px;
-}
-@media only screen and (max-width:800px) {
-  /* For tablets: */
-  body,video {
-    width: 100%;
-    padding: 0;
+  <title>Happy Republic Day</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  * {
+    box-sizing: border-box;
   }
-  .content{
-  padding: 7%;
+  body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
   }
-}
-@media only screen and (max-width:500px) {
-  /* For mobile phones: */
-  body,video {
-    width: 100%;
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
   }
-  .content{
-  padding: 7%;
+  .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
   }
-}
-</style>
+  @media only screen and (max-width:800px) {
+    /* For tablets: */
+    body,video {
+      width: 100%;
+      padding: 0;
+    }
+    .content{
+    padding: 7%;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    body,video {
+      width: 100%;
+    }
+    .content{
+    padding: 7%;
+    }
+  }
+  </style>
 </head>
 <body>
-
-<audio autoplay id="myAudio">
-    <source src="abc.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-</audio>
-<video autoplay muted loop id="myVideo">
-  <source src="Flag1.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
-
-<div class="content">
-  <img src="KIPI_Logo1.png" alt="KIPI.BI" class="bottom-right"><br>
-</div>
-  
+  <audio autoplay id="myAudio">
+      <source src="abc.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+  </audio>
+  <video autoplay muted loop id="myVideo">
+    <source src="Flag1.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  <div class="content">
+    <img src="KIPI_Logo1.png" alt="KIPI.BI" class="bottom-right"><br>
+  </div>
 </body>
 </html>
