@@ -4,22 +4,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
   <title>Happy Republic Day</title>
+  
+  
   <style>
       /* Your provided CSS styles here */
     body {
       margin: 0;
       padding: 0;
 	  width:100%
-      font-family: Arial, sans-serif;
+      font-family: Georgia;
       background-image: url("bg.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
     }
-	h1{
-		font-family: 'Lobster';
-		
-	}
     p {
       margin-top: 10px;
     }
@@ -45,13 +43,22 @@
 }
 .top-left {
   width: 50%;
-  padding: 4% 0% 0% 5% ;
+  padding: 4% 0% 0% 4.5% ;
   position: absolute;
   top: 8px;
   left: 16px;
   font-size :80%;
+  
 }
-h1 {
+h1
+{
+font-size: 275%;
+}
+h2
+{
+font-size: 190%;
+}
+h1,h2 {
     animation: 40s multicolor;
 	animation-iteration-count: 4;
 	text-shadow: 2px 2px 4px skyblue;
@@ -72,6 +79,8 @@ h1 {
     animation: 40s multicolorbtn;
 	animation-iteration-count: 4;
 	text-shadow: 2px 2px 4px skyblue;
+	font-family: Georgia;
+	border-radius: 24px;
 }
 @keyframes multicolorbtn {
     0% {
@@ -112,12 +121,14 @@ h1 {
  <div class="top-left">
 	<center>
 	<br><img src="KIPI_Logo1.png" alt="KIPI.BI" >
-	<h1>
-		Separated by locations, United under the banner of kipi.bi <br> This Republic Day, let's come together to hoist our flag to honor the principles of Democracy, 
+	<h2>
+		Separated by locations, <br>United under the banner of kipi.bi.	 <br> This Republic Day, let's come together to hoist our flag to honor the principles of Democracy, 
 		Equality and Justice. Just as our nation, we breathe the same culture and take pride in considering both India and kipi.bi our home. <br>
-		Wishing everyone a very Happy Republic Day!
+	</h2>
+	<h1>
+		Wishing everyone a very <br> Happy Republic Day!
 	</h1>
-    <a href="flag1.html"><button id="myBtn">Hoist Flag</button></a></center><br>
+    <a href="flag1.html"><button id="myBtn"><b>Hoist Flag</b></button></a></center><br>
  </div>
 </body>
 </html>
