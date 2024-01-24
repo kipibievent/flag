@@ -1,32 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="ISO-8859-1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
   <title>Happy Republic Day</title>
   <style>
-  #myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    width: 100%; 
-    height: 100%;
+      /* Your provided CSS styles here */
+    body {
+      margin: 0;
+      padding: 0;
+	  width:100%
+      font-family: Arial, sans-serif;
+      background-image: url("bg.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
     }
+	h1{
+		font-family: 'Lobster';
+		
+	}
+    p {
+      margin-top: 10px;
+    }
+
+    /* Media queries... */
+    .hidden {
+      display: none;
+    }
+	#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px blue;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+.top-left {
+  width: 50%;
+  padding: 4% 0% 0% 5% ;
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size :80%;
+}
+h1 {
+    animation: 40s multicolor;
+	animation-iteration-count: 4;
+	text-shadow: 2px 2px 4px skyblue;
+}
+@keyframes multicolor {
+    0% {
+        color: orange;
+		
+    }
+    50% {
+        color: blue;
+    }
+    100% {
+        color: green;
+    }
+}
+#myBtn {
+    animation: 40s multicolorbtn;
+	animation-iteration-count: 4;
+	text-shadow: 2px 2px 4px skyblue;
+}
+@keyframes multicolorbtn {
+    0% {
+        background: orange;
+    }
+    50% {
+        background: blue;
+    }
+    100% {
+        background: green;
+    }
+}
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .top-left {
+	  width: 90%;
+	  padding: 0;
+	font-size :80%;
+  }
+  body{
+  background-image: url("bg_res.jpg");
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  top-left {
+    width: 90%;
+	  padding: 0;
+	font-size :80%;
+  }
+  body{
+  background-image: url("bg_res.jpg");
+  }
+}
   </style>
 </head>
 <body>
-  <audio autoplay id="myAudio">
-      <source src="abc.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-  </audio>
-  <video autoplay muted id="myVideo" style='width:100%;height:100%;'>
-    <source src="first.mp4" type="video/mp4">
-    Your browser does not support HTML5 video.
-  </video>
+ <div class="top-left">
+	<center>
+	<br><img src="KIPI_Logo1.png" alt="KIPI.BI" >
+	<h1>Separated by various locations,United under the banner of Kipi.<br>This Republic Day, let's come together to hoist our flag to honor the principles of democracy, equality, and justice. Just as our nation, we breathe the same culture and take pride in considering both India and Kipi our home. <br>Wishing everyone a Republic Day filled with pride and prosperity!.<br> Wishing you a very Happy Republic day!<br> Hoist the flag high with us.</h1>
+    <a href="flag1.html"><button id="myBtn">Hoist Flag</button></a></center><br>
+ </div>
 </body>
-<script>
-  document.getElementById('myVideo').addEventListener('ended',myHandler, false);
-  function myHandler(e) {
-  window.location="home.html";
-  };
-</script>
 </html>
